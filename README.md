@@ -11,7 +11,7 @@ The following files were provided initially.
 
 [nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd)
 
-[nibble_to_sseg_original] (https://github.com/JohnTerragnoli/ECE281_Lab3/blob/master/nibble_to_sseg_original.vhd)
+[nibble_to_sseg_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg_original.vhd)
 
 [pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf)
 
