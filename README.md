@@ -15,6 +15,8 @@ The following files were provided initially.
 
 [pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf)
 
+Note: All of this code was created by an outside source, therefore, everything was left exactly how it was downloaded.  
+
 #Prelab Schematic
 Below shows the current structure of the module Nexys2_top_shell.vhd that was given in the assignment.  
 
