@@ -5,15 +5,15 @@ The purpose of the prelab was to acquire a basic understanding for the archtectu
 
 The following files were provided initially.  
 
-[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider_original.vhd)
+[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider_original.vhd)  This controls clock functions for the behavior of the elevator design.  
 
-[Nexys2_top_shell_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell_original.vhd) 
+[Nexys2_top_shell_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell_original.vhd)   This module combines the functioning of the clock, the converting of nibbles to data that can be output to the seven segment display on the Nexys2, and transfers data to show onto a seven segment display.  This is not finished and surely will have more functionality towards the end of the lab.  
 
-[nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd)
+[nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd)  This takes data and displays it onto the seven segment display on the Nexys2.   
 
-[nibble_to_sseg_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg_original.vhd)
+[nibble_to_sseg_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg_original.vhd)  This intakes data in the form of nibbles and converts the data to a form that can be output to a seven segment display on the Nexys2.  
 
-[pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf)
+[pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf) This module designates the inputs and the outputs of this program to specific locations on the Nexys2 board.  
 
 Note: All of this code was created by an outside source, therefore, everything was left exactly how it was downloaded.  
 
