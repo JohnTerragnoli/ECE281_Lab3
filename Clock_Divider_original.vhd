@@ -13,6 +13,23 @@
 -- By          : Itf2Vhdl ver. 1.20
 --
 -------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------
+--revised
+-- Company: USAFA
+-- Engineer: C3C John Terragnoli
+-- 
+-- Create Date:    12:43:25 03/11/2014 
+-- Module Name:    Nibble_to__sset_original
+-- Target Devices: Nexys2 Project Board
+-- Tool versions: 
+-- Description: Divides clock into smaller times so be used throughout the program.  
+-- 
+--
+----------------------------------------------------------------------------------
+
+
 --
 -- Description : 
 -- ClockBus(0) is   50.0Mhz      20.0ns

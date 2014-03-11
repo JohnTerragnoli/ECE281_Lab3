@@ -1,3 +1,18 @@
+##################################################################################
+## Company: USAFA
+## Engineer: C3C John Terragnoli
+## 
+## Create Date:    12:43:25 03/11/2014 
+## Module Name:    pinout.ucf 
+## Target Devices: Nexys2 Project Board
+## Tool versions: 
+## Description: Plans the locations of interaction on the actual Nexys2 board.  
+## 
+##
+##################################################################################
+
+
+
 NET "btn(3)" LOC = H13;
 NET "btn(2)" LOC = E18;
 NET "btn(1)" LOC = D18;

@@ -1,3 +1,16 @@
+----------------------------------------------------------------------------------
+-- Company: USAFA
+-- Engineer: C3C John Terragnoli
+-- 
+-- Create Date:    12:43:25 03/11/2014 
+-- Module Name:    Nexys2_sset_original - Behavioral 
+-- Target Devices: Nexys2 Project Board
+-- Tool versions: 
+-- Description: Puts numbers onto the seven segment display
+-- 
+--
+----------------------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

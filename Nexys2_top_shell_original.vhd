@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------------------
 -- Company: USAFA
--- Engineer: Silva
+-- Engineer: C3C John Terragnoli
 -- 
--- Create Date:    12:43:25 07/07/2012 
+-- Create Date:    12:43:25 03/11/2014 
 -- Module Name:    Nexys2_Lab3top - Behavioral 
 -- Target Devices: Nexys2 Project Board
 -- Tool versions: 
