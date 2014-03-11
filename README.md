@@ -23,6 +23,7 @@ Below shows the current structure of the module Nexys2_top_shell.vhd that was gi
  ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Prelab%20Schematic1.jpg "Prelab Schematic of Nexys2_top_shell.vhd")
 
 Note: Because the design is not finished, there are many hanging inputs, meaning that the inputs have not be specified.  These inputs include, but are not limited to, btn(3:0) and switch (7:0).  Also, the inputs nibble0(3:0), nibble1(3:0), nibble2(3:0), and nibble3(3:0) are necessary for the design but appear to come from no where in the schematic.  This is because their origin has not been specified yet. 
+
 The only components shown in this diagram are the ones that were in the original Nexys2_top_shell.vhd file here: [Nexys2_top_shell_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell_original.vhd) 
 
 #Documentation: Prelab
