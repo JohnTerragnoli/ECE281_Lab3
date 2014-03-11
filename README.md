@@ -15,7 +15,7 @@ The following files were provided initially.
 
 [pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf) This module designates the inputs and the outputs of this program to specific locations on the Nexys2 board.  
 
-Note: All of this code was created by an outside source, therefore, everything was left exactly how it was downloaded.  The headers were not even altered as to not discredit the work of the creator.  
+Note: All of this code was created by an outside source, therefore, everything was left exactly how it was downloaded.  The headers were only slightly altered.
 
 #Prelab Schematic
 Below shows the current structure of the module Nexys2_top_shell.vhd that was given in the assignment.  
