@@ -17,4 +17,4 @@ The following files were provided initially.
 
 
 #Documentation: Prelab
-C3C Hunter Her gave me the idea of using Microsoft Word for making the schematic.
+NONE
