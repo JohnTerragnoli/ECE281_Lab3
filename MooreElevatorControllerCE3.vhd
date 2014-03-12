@@ -2,10 +2,10 @@
 -- Company: USAFA/DFEC
 -- Engineer: Silva
 -- 
--- Create Date:    	10:33:47 07/07/2012 
--- Design Name:		CE3
+-- Create Date:    	10:33:47 03/11/2014 
+-- Design Name:		Lab3
 -- Module Name:    	MooreElevatorController_Shell - Behavioral 
--- Description: 		Shell for completing CE3
+-- Description: 		Shell for completing Lab3
 ----------------------------------------------------------------------------------
 -- Revision 1.1: 
 
@@ -13,9 +13,21 @@
 -- Engineer: John Paul Terragnoli
 -- 
 -- Create Date:    	20:33:47 06/03/2014 
--- Design Name:		Lab3_Terragnoli
--- Module Name:    	MooreElevatorControllerCE3 - Behavioral 
--- Description: 		Shell for completing elevator logic.  
+-- Design Name:		Lab3
+-- Module Name:    	MooreElevatorController_Shell - Behavioral 
+-- Description: 		Shell for completing Lab3
+----------------------------------------------------------------------------------
+-- Revision 1.2: 
+
+-- Company: USAFA/DFEC
+-- Engineer: John Paul Terragnoli
+-- 
+-- Create Date:    	20:33:47 06/03/2014 
+-- Design Name:		Lab3
+-- Module Name:    	MooreElevatorController_Shell - Behavioral 
+-- Description: 		The only thing that was changed from the last version
+--							is the ability of the elevator to move on floors 1-8 instead
+--							of just 1-4.  
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -33,7 +45,7 @@ architecture Behavioral of MooreElevatorController_Shell is
 --Below you create a new variable type! You also define what values that 
 --variable type can take on. Now you can assign a signal as 
 --"floor_state_type" the same way you'd assign a signal as std_logic 
-type floor_state_type is (floor1, floor2, floor3, floor4);
+type floor_state_type is (floor1, floor2, floor3, floor4,floor5,floor6,floor7,floor8);
 
 --Here you create a variable "floor_state" that can take on the values
 --defined above. Neat-o!
@@ -96,10 +108,49 @@ begin
 				when floor4 =>
 					if (up_down = '0' and stop = '0') then 
 						floor_state <= floor3; 
+					elsif(up_down = '1' and stop = '0') then
+						floor_state <= floor5;
 					else 
 						floor_state <= floor4; 
 					end if;
-				
+				--when on the fifth floor: 
+				when floor5 =>
+					if (up_down = '0' and stop = '0') then 
+						floor_state <= floor4; 
+					elsif(up_down = '1' and stop = '0') then
+						floor_state <= floor6;
+					else 
+						floor_state <= floor5; 
+					end if;
+				--when on the sixth floor: 
+				when floor6 =>
+					if (up_down = '0' and stop = '0') then 
+						floor_state <= floor5; 
+					elsif(up_down = '1' and stop = '0') then
+						floor_state <= floor7;
+					else 
+						floor_state <= floor6; 
+					end if;
+					
+					--when on the seventh floor: 
+				when floor7 =>
+					if (up_down = '0' and stop = '0') then 
+						floor_state <= floor6; 
+					elsif(up_down = '1' and stop = '0') then
+ 					floor_state <= floor8;
+					else 
+						floor_state <= floor7; 
+					end if;	
+
+			--when on the eigth floor: 
+				when floor8 =>
+					if (up_down = '0' and stop = '0') then 
+						floor_state <= floor7; 
+					elsif(up_down = '1' and stop = '0') then
+ 					floor_state <= floor8;
+					else 
+						floor_state <= floor8; 
+					end if;						
 				--This line accounts for phantom states
 				--is this always the same?  
 				when others =>
@@ -110,10 +161,14 @@ begin
 end process;
 
 -- Here you define your output logic. Finish the statements below
-floor <= "0001" when (floor_state =  floor1    ) else
+floor <= "0001" when (floor_state =  floor1) else
 			"0010" when (floor_state =  floor2) else
-			"0011" when (      floor_state =  floor3) else
-			"0100" when (      floor_state =  floor4) else
+			"0011" when (floor_state =  floor3) else
+			"0100" when (floor_state =  floor4) else
+			"0101" when (floor_state =  floor5) else
+			"0110" when (floor_state =  floor6) else
+			"0111" when (floor_state =  floor7) else
+			"1000" when (floor_state =  floor8) else
 			--this last line should account for phantom states.  
 			"0001";
 
