@@ -28,3 +28,7 @@ The only components shown in this diagram are the ones that were in the original
 
 #Documentation: Prelab
 NONE
+
+
+#**Remainder of Lab**
+Using the files from computer excercise three, the actual logic for defining the behavior of an elevator was imported.  Using this logic, an immitation of an elevator was created on the Nexys2 board.  This logic was initially created using a Moore machine.  The file for this logic can be seen here: 
