@@ -35,5 +35,9 @@ Using the files from computer excercise three, the actual logic for defining the
 
 Once the Moore logic was perfected, it was used as a component in the main file Nexys2_top_sell.vhd shown here: [top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell.vhd). 
 
+The inputs to the top shell were then assigned to be used as inputs in the Moore Machine component.  Also, the outputs of the Moore Machine component were returned to the top shell and assigned as a nibble.  This allowed the output of the Moore Machine component to appear on the 7 segment display and for the elevator to respond to the up/down and stop switches, and the reset button.  
+
 Switches were assigned as inputs to the stop and up/down functions in the shell on the Nexys2 board, as well as a resent button for the elevator.  This was done using the .ucf file here:  [Inputs and Outputs specifications](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)
+
+Once all of this was done, a .bit file was created and uploaded to the Nexys2 board.  This .bit file can be seen in the files of this repository labeled as MooreElevatorController_Shell.bit.  Unforunately, a direct link to the raw data cannot be made here.  
 
