@@ -31,4 +31,5 @@ NONE
 
 
 #**Remainder of Lab**
-Using the files from computer excercise three, the actual logic for defining the behavior of an elevator was imported.  Using this logic, an immitation of an elevator was created on the Nexys2 board.  This logic was initially created using a Moore machine.  The file for this logic can be seen here: [Moore Behavioral File](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerCE3.vhd) 
+Using the files from computer excercise three, the actual logic for defining the behavior of an elevator was imported.  Using this logic, an immitation of an elevator was created on the Nexys2 board.  This logic was initially created using a Moore machine.  The file for this logic can be seen here: [Moore Behavioral File](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerCE3.vhd) This file was altered, however, from the original CE3 file logic.  It was modified to be able to handle floors 1-8 instead of just floors 1-4.  Aside from this, no changes were made.  The original file can be seen here: [Original Moore Logic](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_Shell.vhd)
+
