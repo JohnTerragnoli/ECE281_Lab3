@@ -35,5 +35,5 @@ Using the files from computer excercise three, the actual logic for defining the
 
 Once the Moore logic was perfected, it was used as a component in the main file Nexys2_top_sell.vhd shown here: [top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell.vhd). 
 
-Switches were assigned as inputs to the stop and up/down functions in the shell on the Nexys2 board, as well as a resent button for the elevator.  This was done using the .ucf file here:  
+Switches were assigned as inputs to the stop and up/down functions in the shell on the Nexys2 board, as well as a resent button for the elevator.  This was done using the .ucf file here:  [Inputs and Outputs specifications](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)
 
