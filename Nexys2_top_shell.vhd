@@ -107,7 +107,7 @@ signal ClockBus_sig : STD_LOGIC_VECTOR (26 downto 0);
 --------------------------------------------------------------------------------------
 --Insert your design's component declaration below	
 --Component Declaration.  
---This component brings in the logic for the elevator. 
+--This component brings in the logic for the elevator using the moore machine. 
 -------------------------------------------------------------------------------------
 	COMPONENT MooreElevatorController_Shell
 	PORT(
@@ -118,11 +118,29 @@ signal ClockBus_sig : STD_LOGIC_VECTOR (26 downto 0);
       floor : out  STD_LOGIC_VECTOR (3 downto 0)
 		);
 	END COMPONENT; 
+	-----------------------------------------------------------------------------------
+--Insert your design's component declaration below	
+--Component Declaration.  
+--This component brings in the logic for the elevator using the Mealy Machine. 
+--------------------------------------------------------------------------------------
+	COMPONENT MealyElevatorController_Shell
+	PORT(
+		clk : in  STD_LOGIC;
+      reset : in  STD_LOGIC;
+      stop : in  STD_LOGIC;
+      up_down : in  STD_LOGIC;
+      floor : out  STD_LOGIC_VECTOR (3 downto 0);
+		nextfloor : out std_logic_vector (3 downto 0)
+		);
+	END COMPONENT; 
+
 --------------------------------------------------------------------------------------
 --Insert any required signal declarations below
 --------------------------------------------------------------------------------------
 
-signal currentFloor : std_logic_vector (3 downto 0);
+signal currentFloorMoore : std_logic_vector (3 downto 0);
+signal currentFloorMealy : std_logic_vector (3 downto 0);
+signal dump : std_logic_vector (3 downto 0);
 
 begin
 
@@ -152,9 +170,9 @@ LED <= CLOCKBUS_SIG(26 DOWNTO 19);
 --------------------------------------------------------------------------------------
 
 nibble0 <=  "0000";
-nibble1 <= 	"0000";
-nibble2 <= 	"0000";
-nibble3 <=  currentFloor;
+nibble1 <= 	dump;
+nibble2 <= 	currentFloorMealy;
+nibble3 <=  currentFloorMoore;
 
 --This code converts a nibble to a value that can be displayed on 7-segment display #0
 	sseg0: nibble_to_sseg PORT MAP(
@@ -203,8 +221,22 @@ nibble3 <=  currentFloor;
 		clk=>ClockBus_sig(25),
       reset=>btn(3),
       stop=>switch(7),
-      up_down=>switch(6),
-      floor=> currentFloor
+		--changed to 5 temporarily because switch 6 looks like it's broken.  
+      up_down=>switch(5),
+      floor=> currentFloorMoore
+	);
+
+-------------------------------------------------------------------------------
+--Instantiate Mealy Machine
+	MealyElevatorLogic : MealyElevatorController_Shell
+	PORT MAP(
+		clk=>ClockBus_sig(25),
+      reset=>btn(3),
+      stop=>switch(7),
+		--changed to 5 temporarily because switch 6 looks like it's broken.  
+      up_down=>switch(5),
+      floor=> dump,
+		nextFloor =>currentFloorMealy
 	);
 
 end Behavioral;
