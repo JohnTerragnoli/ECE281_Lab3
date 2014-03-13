@@ -77,6 +77,8 @@ begin
 					if (up_down='1' and stop='0') then 
 						--floor2 right?? This makes sense!
 						floor_state <= floor2;
+					elsif(up_down = '0' and stop ='0') then
+						floor_state <=floor1;
 					--otherwise we're going to stay at floor1
 					else
 						floor_state <= floor1;
