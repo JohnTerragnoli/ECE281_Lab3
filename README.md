@@ -41,7 +41,7 @@ Switches were assigned as inputs to the stop and up/down functions in the shell 
 
 Once all of this was done, a .bit file was created and uploaded to the Nexys2 board.  This .bit file can be seen in the files of this repository labeled as MooreElevatorController_Shell.bit.  Unforunately, a direct link to the raw data cannot be made here.  
 
-#**Four Floor Mealy Machine**
+#**4 Floor Mealy Machine**
 The mealy machine module created in Computer Exercise 3 was then used to code the logic for the elevator on the Nexys2 board.  The outputs onto the Nexys2 board were the nextFloor output and the currentFloor output of the Mealy Machine.  The Mealy Machine has the same inputs as the Moore Machine, a stop switch, an up/down switch, and a reset button.  
 
 The top shell was updated to include a declaration and an instantiation of the Mealy Machine.  This file is reproduced here: [top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell.vhd).  
