@@ -52,3 +52,15 @@ Note: Only four floors were used in the Mealy Machine because there are so many 
 
 The file for the Mealy Machine logic is produced here:  [Mealy Machine Code](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MealyElevatorController_Shell.vhd)  
 
+
+#**8 Prime Number Floors**
+
+In this part of the lab, 8 floors were still used on the elevator, and the up/down, reset, and stop inputs were still controlling how the elevator moved.  However, the floors were not numbered 1-8, but instead were numbered, 2,3,5,7,11,13,17,19, for the first 8 prime numbers.  
+
+The files for this program can be seen below: 
+
+
+
+
+In order to do this
+
