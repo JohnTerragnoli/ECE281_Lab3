@@ -59,19 +59,19 @@ In this part of the lab, 8 floors were still used on the elevator, and the up/do
 
 The files for this program can be seen below: 
 
-[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)  This controls clock functions for the behavior of all elevator designs. This is contained in the Prime_Numbers_top_shell.vhd module. This was not altered.  
 
-[MooreElevatorControllerPrime_Shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerPrime_Shell.vhd)
+[MooreElevatorControllerPrime_Shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerPrime_Shell.vhd)  This file was altered from previous designs to account for the numbers that would be displayed onto the seven segment display.  Many of the outputs that related to floors 1-8 were just changed to the desired floors.  However, the output contains only 4 bits.  Therefore, to get the numbers 17 and 19, "code" numbers were created, meaning that 17 and 19 were each represented as 2 separate 4 bit numbers.  These two numbers were then recognized in the Prime_floors_top_shell.vhd file as being 17 and 10 so the appropriate values were output to the Nexys2 board.  
 
-[Prime_Floors_top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Prime_Floors_top_shell.vhd)
+[Prime_Floors_top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Prime_Floors_top_shell.vhd) This was slightly altered to account for double digit numbers and the numbers 17 and 19.  Logic was used to make sure that if the number trying to be output was greater than 10, then the first seven segment display would show a 1, if not, it would show a 0.  Then, the second digit of the output would be displayed on the second seven segment display.  
 
-[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd)
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd)This takes data and displays it onto the seven segment display on the Nexys2. This is contained in the Prime_Numbers_top_shell.vhd module.  This was not altered.  
 
-[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd)
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd) This intakes data in the form of nibbles and converts the data to a form that can be output to a seven segment display on the Nexys2. This is contained in the Prime_Numbers_top_shell.vhd module. This was not altered.  
+
+[Pintout.ucf](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf) This module designates the inputs and the outputs of this program to specific locations on the Nexys2 board. This was not altered.  
 
 The file prime_floors_top_shell.bit can be seen in the repository under the commit prime number elevator1.
 
-
-
-In order to do this
+As a result of these alterations, the prime floors elevator was able to work perfectly.  
 
