@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
  
 -- Title       : nexy2_sseg
--- Design      : Elevator (prime number and regular)
+-- Design      : Used in all Elevator Designs in Lab3.  
 -- Author      : C3C John Paul Terragnoli
 -- Company     : ECE281 Dream Team
 -- File        : nexy2_sseg.vhd

@@ -3,7 +3,7 @@
 -- Engineer: C3C John Paul Terragnoli
 -- 
 -- Create Date:    19:07:43 03/10/2014 
--- Design Name: 	 Elevator
+-- Design Name: 	 Used in All Elevator Designs in Lab3
 -- Module Name:    nibble_to_sseg - Behavioral 
 -- Project Name:   Lab3_Terragnoli
 -- Target Devices: Nexys2
