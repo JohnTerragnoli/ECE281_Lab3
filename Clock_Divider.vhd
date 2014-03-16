@@ -16,7 +16,7 @@
 
 --Revision Information: 
 -- Title       : Clock_Divider
--- Design      : Soda_Machine
+-- Design		: For All Elevator Designs in Lab3.  
 -- Author      : C3C John Paul Terragnoli
 -- Company     : ECE281 Dream Team
 -- File        : Clock_Divider.vhd

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
  
 -- Title       : nexy2_sseg
--- Design      : Soda_Machine
+-- Design      : Elevator (prime number and regular)
 -- Author      : C3C John Paul Terragnoli
 -- Company     : ECE281 Dream Team
 -- File        : nexy2_sseg.vhd
