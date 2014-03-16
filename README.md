@@ -75,3 +75,10 @@ The file prime_floors_top_shell.bit can be seen in the repository under the comm
 
 As a result of these alterations, the prime floors elevator was able to work perfectly.  
 
+
+#**8 Floors Specific Floor Input**
+This demonstration is the same as the basic functionality, however, the inputs consist of 3 switches that determine the desired floor of the user.  The user will use the switches to tell the elevator which floor to go to.  Also, the reset button was kept, just for kicks.  
+
+The files used for this program can be seen below: 
+
+
