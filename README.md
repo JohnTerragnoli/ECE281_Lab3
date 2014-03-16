@@ -59,6 +59,17 @@ In this part of the lab, 8 floors were still used on the elevator, and the up/do
 
 The files for this program can be seen below: 
 
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)
+
+[MooreElevatorControllerPrime_Shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerPrime_Shell.vhd)
+
+[Prime_Floors_top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Prime_Floors_top_shell.vhd)
+
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd)
+
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd)
+
+The file prime_floors_top_shell.bit can be seen in the repository under the commit prime number elevator1.
 
 
 
