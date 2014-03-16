@@ -81,4 +81,16 @@ This demonstration is the same as the basic functionality, however, the inputs c
 
 The files used for this program can be seen below: 
 
+[Changed_Inputs_Elevator](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Elevator.vhd) This was the top shell for the elevator. A copy from the original basic functionality was used intially and altered. In this shell, the declaration and the instantiation was altered to be one of the Changed_Inputs_Moore module.  Aside from that, not muct was changed.  Also, the floors were made to be 0-7.  
 
+[Changed_Inputs_Moore](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Moore.vhd) This module contained the Moore Machine logic for the elevator.  It was similar to the Moore logic used in previous designs, however, this Moore Machine took in a std_logic_vector of length 3 as the desired floor of the user.  The module then checks whether or not the current floor is above, at, or below the desired floor, and moves in the proper direction.  Also, the floors were made to be 0-7.  
+
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd) This file was the same as in previous designs.  
+
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd) This file was the same as in previous designs.  
+
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd) This file was the same as in previous designs.  
+
+[Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)  This file was the same as in previous designs.
+
+The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2".  
