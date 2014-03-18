@@ -119,6 +119,22 @@ The bit file used to program the Nexys2 board can be seen in this repository lab
 
 Partial functionality was made as to where the elevators will respond to a request and go pick a person up at a specific floor.  A functionality check can be seen here: [2_Elevators_Half](https://www.youtube.com/watch?v=_m5-nXUHLnw&feature=youtu.be) 
 
+The files used to do this can be seen here: 
+
+
+[2_Elevators_Half](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Two_Elevators2.vhd) This was the top shell for the elevator. Logic was added so that the closest elevator would be sent to the requested floor.  
+
+[Changed_Inputs_Moore](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Moore.vhd) This module contained the Moore Machine logic for the elevator.  This is the same file used in the 8 floor alternate method of specifying inputs.  
+
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd) This file was the same as in previous designs.  
+
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd) This file was the same as in previous designs.  
+
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd) This file was the same as in previous designs.  
+
+[Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)  This file was the same as in previous designs.
+
+The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2".
 
 
 #**Documentation Final**
