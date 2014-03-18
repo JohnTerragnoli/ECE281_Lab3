@@ -93,4 +93,67 @@ As a result of these alterations, the prime floors elevator was able to work per
 
 
 #**8 Floors Specific Floor Input**
-This demonstration is the same as the basic functionality, however, the inputs consist of 3 switches that determine the desired floor of the user.  The user will use the switches to tell the elevator w
+This demonstration is the same as the basic functionality, however, the inputs consist of 3 switches that determine the desired floor of the user. The user will use the switches to tell the elevator which floor to go to. Also, the reset button was kept, just for kicks. 
+
+
+
+
+
+The files used for this program can be seen below: 
+
+[Changed_Inputs_Elevator](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Elevator.vhd)  This was the top shell for the elevator. A copy from the original basic functionality was used intially and altered. In this shell, the declaration and the instantiation was altered to be one of the Changed_Inputs_Moore module. Aside from that, not muct was changed, except that floors were made to be 0-7. 
+
+[Changed_Inputs_Moore](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Moore.vhd)   This module contained the Moore Machine logic for the elevator. It was similar to the Moore logic used in previous designs, however, this Moore Machine took in a std_logic_vector of length 3 as the desired floor of the user. The module then checks whether or not the current floor is above, at, or below the desired floor, and moves in the proper direction or stays put as necessary. Also, the floors were made to be 0-7. 
+
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd) This file was the same as in previous designs. 
+
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd) This file was the same as in previous designs. 
+
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)  This file was the same as in previous designs. 
+
+[Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf) This file was the same as in previous designs.
+
+The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2". 
+
+#**8 Floors Moving LEDs** 
+
+The point of this program was to have the LEDs on the Nexys2 appear to be moving to the left when the floors were going up, and have the LEDs appear to be moving to the right when going down. The files used are shown below:
+
+Moving_LEDs This was the top shell for the elevator. A copy from the original basic functionality was used intially and altered. In this shell, the declaration and the instantiation was altered to be one of the Changed_Inputs_Moore_LEDs module. This shell was simply changed such that a std_logic_vector output by the Moore Machine logic would determine which LED would light up and when. 
+
+Changed_Inputs_Moore_LEDs This module contained the Moore Machine logic for the elevator. It was similar to the Moore logic used in previous designs, however, this Moore Machine also returned a std_logic_vector according to what floor the elevator was on. 
+
+Nexys2_sseg This file was the same as in previous designs. 
+
+Nibble_to_sseg This file was the same as in previous designs. 
+
+Clock_Divider This file was the same as in previous designs. 
+
+Pinout This file was the same as in previous designs.
+
+The bit file used to program the Nexys2 board can be seen in this repository labeled moving_leds.bit under the commit "LEDs1". 
+
+?2 Elevators 
+
+Partial functionality was made as to where the elevators will respond to a request and go pick a person up at a specific floor. A functionality check can be seen here: 2_Elevators_Half 
+
+The files used to do this can be seen here: 
+
+2_Elevators_Half This was the top shell for the elevator. Logic was added so that the closest elevator would be sent to the requested floor. 
+
+Changed_Inputs_Moore This module contained the Moore Machine logic for the elevator. This is the same file used in the 8 floor alternate method of specifying inputs. 
+
+Nexys2_sseg This file was the same as in previous designs. 
+
+Nibble_to_sseg This file was the same as in previous designs. 
+
+Clock_Divider This file was the same as in previous designs. 
+
+Pinout This file was the same as in previous designs.
+
+The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2".
+
+ ?Documentation Final 
+
+NONE
+
