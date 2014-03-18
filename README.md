@@ -134,7 +134,7 @@ The files used to do this can be seen here:
 
 [Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)  This file was the same as in previous designs.
 
-The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2".
+The bit file used to program the Nexys2 board can be seen in this repository labeled two_elevators.bit under the commit "2elevator2".
 
 
 #**Documentation Final**
