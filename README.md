@@ -94,3 +94,27 @@ The files used for this program can be seen below:
 [Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)  This file was the same as in previous designs.
 
 The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2".  
+
+
+#**8 Floors Moving LEDs**
+The point of this program was to have the LEDs on the Nexys2 appear to be moving to the left when the floors were going up, and have the LEDs appear to be moving to the right when going down.  The files used are shown below:
+
+
+
+[Moving_LEDs](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Moving_LEDs.vhd) This was the top shell for the elevator. A copy from the original basic functionality was used intially and altered. In this shell, the declaration and the instantiation was altered to be one of the Changed_Inputs_Moore_LEDs module.  This shell was simply changed such that a std_logic_vector output by the Moore Machine logic would determine which LED would light up and when.  
+
+[Changed_Inputs_Moore_LEDs](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Moore_LEDs.vhd) This module contained the Moore Machine logic for the elevator.  It was similar to the Moore logic used in previous designs, however, this Moore Machine also returned a std_logic_vector according to what floor the elevator was on.  
+
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd) This file was the same as in previous designs.  
+
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd) This file was the same as in previous designs.  
+
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd) This file was the same as in previous designs.  
+
+[Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf)  This file was the same as in previous designs.
+
+The bit file used to program the Nexys2 board can be seen in this repository labeled moving_leds.bit under the commit "LEDs1".  
+
+
+
+
