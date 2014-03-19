@@ -4,14 +4,14 @@
 # 
 # Create Date:    19:07:43 03/10/2014 
 # Design Name: 	 Elevator
-# Module Name:    nibble_to_sseg - Behavioral 
+# Module Name:    pinout.ucf 
 # Project Name:   Lab3_Terragnoli
 # Target Devices: Nexys2
 # Tool versions: 1.0 ; Mar 10  14:07:10   2014
 # Description: 
 #
 # Dependencies: Nexys2_top_shell.vhd ; nibble_to_sseg.vhd ; nexys2_sseg.vhd ; Clock_Divider.vhd
-#
+#					and all files used in lab3.  
 # Revision:  NONE
 # Revision 0.01 - File Created
 # Additional Comments: NONE

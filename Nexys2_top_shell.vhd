@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------------------
 --Revision Information: 
 -- Title       : Nexys2_Lab3top - Behavioral
--- Design      : Soda_Machine
+-- Design      : Basic Elevators
 -- Author      : C3C John Paul Terragnoli
 -- Company     : ECE281 Dream Team
 -- File        : Nexys2_top_shell.vhd

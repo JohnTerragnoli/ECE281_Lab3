@@ -49,7 +49,7 @@ begin
 		--Question: is reset synchronous or asynchronous?
 		--synchronous.  
 		if reset='1' then
-			floor_state <= floor1;
+			floor_state <= floor0;
 		--now we will code our next-state logic
 		else
 			case floor_state is
