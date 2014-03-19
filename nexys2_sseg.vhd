@@ -75,7 +75,9 @@ begin
 					state_next <= s3;
 				when s3 =>
 					state_next <= s0;
-			end case;
+				when others => 
+					state_next <= s0;
+			end case; 
 		end if;
 	end process;
 	
@@ -97,6 +99,9 @@ begin
 				when s3 =>
 					sseg_next <= sseg3;
 					sel_next <= "0111";
+				when others =>
+					sseg_next <= sseg0;
+					sel_next <= "1110";
 			end case;
 	end process;
 end behavioral;
