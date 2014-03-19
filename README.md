@@ -1,5 +1,26 @@
 ECE281_Lab3
 ===========
+
+#**Functionality**
+The following levels of functionality were achieved in this lab.  
+
+##Basic Functionality Moore
+
+##Basic Functionality Mealy
+
+##First 8 Prime Numbers
+
+##Changed Inputs
+
+##Moving LEDs
+
+##Multiple Elevators
+
+ALL LEVELS OF FUNCTIONALITY WERE ACHIEVED
+
+Details on each functionality level can be seen below!
+
+
 #**Prelab**
 The purpose of the prelab was to acquire a basic understanding for the archtecture of the program describing the behavior of an elevator.  
 
@@ -28,25 +49,6 @@ The only components shown in this diagram are the ones that were in the original
 
 #Documentation: Prelab
 NONE
-
-#**Functionality**
-The following levels of functionality were achieved in this lab.  
-
-#Basic Functionality Moore
-
-#Basic Functionality Mealy
-
-#First 8 Prime Numbers
-
-#Changed Inputs
-
-#Moving LEDs
-
-#Multiple Elevators
-
-ALL LEVELS OF FUNCTIONALITY WERE ACHIEVED
-
-Details on each functionality level can be seen below!
 
 
 
@@ -156,7 +158,7 @@ The bit file used to program the Nexys2 board can be seen in this repository lab
 
 #**Editing**
 
-**Original Files for Lab3 ** 
+**Original Files for Lab3** 
 
 [Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)  This controls clock functions for the behavior of the elevator design.  This is contained in the Nexys2_top_shell_original.vhd module.  
 
@@ -173,7 +175,7 @@ There was no bad code in the clock divider, the nexys2 top shell, or the nibble 
 
 
 
-**Original Files for Moore and Mealy Machine from Computer Exercise 3:**]
+**Original Files for Moore and Mealy Machine from Computer Exercise 3:**
 
 [Moore_Original_from_CE3](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorController_Shell_original.vhd)
 
