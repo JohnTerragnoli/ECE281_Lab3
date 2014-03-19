@@ -119,7 +119,7 @@ The bit file used to program the Nexys2 board can be seen in this repository lab
 
 The point of this program was to have the LEDs on the Nexys2 appear to be moving to the left when the floors were going up, and have the LEDs appear to be moving to the right when going down. The files used are shown below:
 
-[oving_LEDs](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Moving_LEDs.vhd) This was the top shell for the elevator. A copy from the original basic functionality was used intially and altered. In this shell, the declaration and the instantiation was altered to be one of the Changed_Inputs_Moore_LEDs module. This shell was simply changed such that a std_logic_vector output by the Moore Machine logic would determine which LED would light up and when. 
+[Moving_LEDs](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Moving_LEDs.vhd) This was the top shell for the elevator. A copy from the original basic functionality was used intially and altered. In this shell, the declaration and the instantiation was altered to be one of the Changed_Inputs_Moore_LEDs module. This shell was simply changed such that a std_logic_vector output by the Moore Machine logic would determine which LED would light up and when. 
 
 [Changed_Inputs_Moore_LEDs](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Moore_LEDs.vhd) This module contained the Moore Machine logic for the elevator. It was similar to the Moore logic used in previous designs, however, this Moore Machine also returned a std_logic_vector according to what floor the elevator was on. 
 
@@ -135,25 +135,24 @@ The bit file used to program the Nexys2 board can be seen in this repository lab
 
 #**2 Elevators** 
 
-This design creates two elevators.  Then, the user may call for an elevator from a specific floor.  The closest elevator should move to pick up the user, or just one elevator if both elevators are the same distance from the call. A video of this working can be seen here: 
+This design creates two elevators.  Then, the user may call for an elevator from a specific floor.  The closest elevator picks up the user, or if both are the same distance from the called elevator, only one elevator will go pick up the user. A video of this working can be seen here: [Two_Elevators_Simulation](https://www.youtube.com/watch?v=_m5-nXUHLnw&feature=youtu.be)
 
 The files used to do this can be seen here: 
 
-2_Elevators_Half This was the top shell for the elevator. Logic was added so that the closest elevator would be sent to the requested floor. 
+[2_Elevators](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Two_Elevators2.vhd)  This was the top shell for the elevator. Logic was added so that the closest elevator would be sent to the requested floor. This was accomplished using a process.  
 
-Changed_Inputs_Moore This module contained the Moore Machine logic for the elevator. This is the same file used in the 8 floor alternate method of specifying inputs. 
+[Changed_Inputs_Moore](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Changed_Inputs_Moore.vhd) his module contained the Moore Machine logic for the elevator. This is the same file used in the 8 floor alternate method of specifying inputs. 
 
-Nexys2_sseg This file was the same as in previous designs. 
+[Nexys2_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg.vhd) This file was the same as in previous designs. 
 
-Nibble_to_sseg This file was the same as in previous designs. 
+[Nibble_to_sseg](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg.vhd) This file was the same as in previous designs. 
 
-Clock_Divider This file was the same as in previous designs. 
+[Clock_Divider](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd) This file was the same as in previous designs. 
 
-Pinout This file was the same as in previous designs.
+[Pinout](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout.ucf) This file was the same as in previous designs.
 
-The bit file used to program the Nexys2 board can be seen in this repository labeled changed_inputs_elevator.bit under the commit "specific inputs2".
+The bit file used to program the Nexys2 board can be seen in this repository labeled two_elevators.bit under the commit "2elevator2".
 
- ?Documentation Final 
-
-NONE
+#**Documentation Final**
+I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
 
