@@ -312,6 +312,9 @@ This statement should be changed to this because it has the same meaning but lea
 	if RISING_EDGE(CLK)  then
 ```
 
+#Bad and Good Code 4
+The same exact problem as in problem 3 occured in the original Mealy Machine file.  It was corrected in the exact same way.  
+
 
 #**Documentation Final**
 I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
