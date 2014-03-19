@@ -53,6 +53,8 @@ NONE
 
 
 #**8 Floor Elevator using Moore Machine**
+THIS WAS DONE AS PART OF BASIC FUNCTIONALITY.
+
 Using the files from computer excercise three, the actual logic for defining the behavior of an elevator was imported.  Using this logic, an immitation of an elevator was created on the Nexys2 board.  This logic was initially created using a Moore machine.  The file for this logic can be seen here: [Moore Behavioral File](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerCE3.vhd) This file was altered, however, from the original CE3 file logic.  It was modified to be able to handle floors 1-8 instead of just floors 1-4.  Aside from this, no changes were made.  The original file can be seen here: [Original Moore Logic](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_Shell.vhd)
 
 Once the Moore logic was perfected, it was used as a component in the main file Nexys2_top_sell.vhd shown here: [top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell.vhd). 
@@ -64,6 +66,8 @@ Switches were assigned as inputs to the stop and up/down functions in the shell 
 Once all of this was done, a .bit file was created and uploaded to the Nexys2 board.  This .bit file can be seen in the files of this repository labeled as MooreElevatorController_Shell.bit.  Unforunately, a direct link to the raw data cannot be made here.  
 
 #**4 Floor Mealy Machine**
+THIS WAS DONE AS PART OF BASIC FUNCTIONALITY.
+
 The mealy machine module created in Computer Exercise 3 was then used to code the logic for the elevator on the Nexys2 board.  The outputs onto the Nexys2 board were the nextFloor output and the currentFloor output of the Mealy Machine.  The Mealy Machine has the same inputs as the Moore Machine, a stop switch, an up/down switch, and a reset button.  
 
 The top shell was updated to include a declaration and an instantiation of the Mealy Machine.  This file is reproduced here: [top_shell](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell.vhd).  
