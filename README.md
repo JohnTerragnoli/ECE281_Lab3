@@ -184,6 +184,9 @@ Note: These files belong to someone else and were not edited at all, therefore t
 
 **Moore and Mealy Machine files altered during Computer Exercise 3:**
 
+[Moore_from _CE3](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorControllerCE3.vhd)
+
+[Mealy_from_CE3](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MealyElevatorController_Shell.vhd)
 
 
 
