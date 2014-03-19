@@ -170,6 +170,54 @@ The following files were provided initially.
 
 There was no bad code in the clock divider or the nexys2 top shell files.  
 
+#Bad Code1
+
+This instance of bad code was found in the [nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd) in the process starting at line 64.
+
+'''vhdl
+	process (state_reg, count_reg) is
+	begin
+		state_next <= state_reg;
+		if count_reg = TICKS_IN_MS then
+			case (state_reg) is
+				when s0 =>
+					state_next <= s1;
+				when s1 =>
+					state_next <= s2;
+				when s2 =>
+					state_next <= s3;
+				when s3 =>
+					state_next <= s0;
+			end case;
+		end if;
+	end process;
+'''
+
+#Good Code 1
+The problem with this code is that there is no "when others" case in the case statment, which leaves room for the computer to make assumptions, which is never a good thing. The corrected code can be seen below: 
+
+'''vhdl
+	process (state_reg, count_reg) is
+	begin
+		state_next <= state_reg;
+		if count_reg = TICKS_IN_MS then
+			case (state_reg) is
+				when s0 =>
+					state_next <= s1;
+				when s1 =>
+					state_next <= s2;
+				when s2 =>
+					state_next <= s3;
+				when s3 =>
+					state_next <= s0;
+				when others => 
+				 state_next <= s0;
+			end case;
+		end if;
+	end process;
+'''
+
+
 #**Documentation Final**
 I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
 
