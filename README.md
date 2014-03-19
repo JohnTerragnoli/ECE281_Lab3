@@ -153,6 +153,23 @@ The files used to do this can be seen here:
 
 The bit file used to program the Nexys2 board can be seen in this repository labeled two_elevators.bit under the commit "2elevator2".
 
+
+
+#**Code Editing**
+The following files were provided initially.  
+
+[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider_original.vhd)  This controls clock functions for the behavior of the elevator design.  This is contained in the Nexys2_top_shell_original.vhd module.  
+
+[Nexys2_top_shell_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell_original.vhd)   This module combines the functioning of the clock, the converting of nibbles to data that can be output to the seven segment display on the Nexys2, and transfers data to show onto a seven segment display.  This is not finished and surely will have more functionality towards the end of the lab.  The schematic of this shell is shown lower in this README.
+
+[nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd)  This takes data and displays it onto the seven segment display on the Nexys2.   This is contained in the Nexys2_top_shell_original.vhd module.  
+
+[nibble_to_sseg_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nibble_to_sseg_original.vhd)  This intakes data in the form of nibbles and converts the data to a form that can be output to a seven segment display on the Nexys2.  This is contained in the Nexys2_top_shell_original.vhd module.  
+
+[pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf) This module designates the inputs and the outputs of this program to specific locations on the Nexys2 board.  
+
+
+
 #**Documentation Final**
 I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
 
