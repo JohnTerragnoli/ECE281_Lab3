@@ -298,6 +298,21 @@ end behavioral;
 ```
 
 
+#Bad Code 3
+This edit is from the original Moore shell given in CE3.  Here, the maker used at statement which is technically functionable, but is not correct.  It is improper to use conditional logic in the following circumstance, and should instead written with nested "if" statments.  The code is show below: 
+
+```vhdl
+	if clk'event and clk='1' then
+```
+
+#Good Code 3: 
+This statement should be changed to this because it has the same meaning but leaves less room for the computer to mess up and to make the code harder to synthesize.  
+
+```vhdl
+	if RISING_EDGE(CLK)  then
+```
+
+
 #**Documentation Final**
 I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
 
