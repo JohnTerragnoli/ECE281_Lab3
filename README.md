@@ -4,17 +4,17 @@ ECE281_Lab3
 #**Functionality**
 The following levels of functionality were achieved in this lab.  
 
-1. ##Basic Functionality Moore
+##1. Basic Functionality Moore
 
-2. ##Basic Functionality Mealy
+##2. Basic Functionality Mealy
 
-3. ##First 8 Prime Numbers
+##3. First 8 Prime Numbers
 
-4. ##Changed Inputs
+##4. Changed Inputs
 
-5. ##Moving LEDs
+##5. Moving LEDs
 
-6. ##Multiple Elevators
+##6. Multiple Elevators
 
 ALL LEVELS OF FUNCTIONALITY WERE ACHIEVED
 
