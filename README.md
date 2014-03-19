@@ -135,7 +135,7 @@ The bit file used to program the Nexys2 board can be seen in this repository lab
 
 #**2 Elevators** 
 
-Partial functionality was made as to where the elevators will respond to a request and go pick a person up at a specific floor. A functionality check can be seen here: 2_Elevators_Half 
+This design creates two elevators.  Then, the user may call for an elevator from a specific floor.  The closest elevator should move to pick up the user, or just one elevator if both elevators are the same distance from the call. A video of this working can be seen here: 
 
 The files used to do this can be seen here: 
 
