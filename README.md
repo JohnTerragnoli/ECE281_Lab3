@@ -5,7 +5,7 @@ The purpose of the prelab was to acquire a basic understanding for the archtectu
 
 The following files were provided initially.  
 
-[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider_original.vhd)  This controls clock functions for the behavior of the elevator design.  This is contained in the Nexys2_top_shell_original.vhd module.  
+[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)  This controls clock functions for the behavior of the elevator design.  This is contained in the Nexys2_top_shell_original.vhd module.  
 
 [Nexys2_top_shell_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell_original.vhd)   This module combines the functioning of the clock, the converting of nibbles to data that can be output to the seven segment display on the Nexys2, and transfers data to show onto a seven segment display.  This is not finished and surely will have more functionality towards the end of the lab.  The schematic of this shell is shown lower in this README.
 
@@ -158,7 +158,7 @@ The bit file used to program the Nexys2 board can be seen in this repository lab
 #**Code Editing**
 The following files were provided initially.  
 
-[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider_original.vhd)  This controls clock functions for the behavior of the elevator design.  This is contained in the Nexys2_top_shell_original.vhd module.  
+[Clock_Divider] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Clock_Divider.vhd)  This controls clock functions for the behavior of the elevator design.  This is contained in the Nexys2_top_shell_original.vhd module.  
 
 [Nexys2_top_shell_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/Nexys2_top_shell_original.vhd)   This module combines the functioning of the clock, the converting of nibbles to data that can be output to the seven segment display on the Nexys2, and transfers data to show onto a seven segment display.  This is not finished and surely will have more functionality towards the end of the lab.  The schematic of this shell is shown lower in this README.
 
