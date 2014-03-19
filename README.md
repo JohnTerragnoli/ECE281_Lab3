@@ -170,7 +170,16 @@ The following files were provided initially.
 
 There was no bad code in the clock divider, the nexys2 top shell, or the nibble to sseg files.  
 
-Original Files for Moore and Mealy Machine from Computer Exercise 3.  
+
+
+
+**Original Files for Moore and Mealy Machine from Computer Exercise 3: **
+
+
+
+**Moore and Mealy Machine files altered during Computer Exercise 3:**
+
+
 
 
 #Bad Code1
