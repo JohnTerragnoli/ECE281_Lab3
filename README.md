@@ -325,3 +325,5 @@ The same exact problem as in problem 3 occured in the original Mealy Machine fil
 #**Documentation Final**
 I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
 
+I used this to figure out how to use sub-headings in markdown [subheadings_help](http://www.ithoughts.co.uk/iThoughtsHD/Markdown.html)  
+
