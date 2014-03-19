@@ -175,6 +175,7 @@ There was no bad code in the clock divider or the nexys2 top shell files.
 This instance of bad code was found in the [nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd) in the process starting at line 64.
 
 '''vhdl
+
 	process (state_reg, count_reg) is
 	begin
 		state_next <= state_reg;
@@ -191,12 +192,14 @@ This instance of bad code was found in the [nexys2_sseg_original](https://raw.gi
 			end case;
 		end if;
 	end process;
+	
 '''
 
 #Good Code 1
 The problem with this code is that there is no "when others" case in the case statment, which leaves room for the computer to make assumptions, which is never a good thing. The corrected code can be seen below: 
 
 '''vhdl
+
 	process (state_reg, count_reg) is
 	begin
 		state_next <= state_reg;
@@ -215,6 +218,7 @@ The problem with this code is that there is no "when others" case in the case st
 			end case;
 		end if;
 	end process;
+	
 '''
 
 
