@@ -18,7 +18,7 @@ The following levels of functionality were achieved in this lab.
 
 ALL LEVELS OF FUNCTIONALITY WERE ACHIEVED
 
-Details on each functionality level can be seen below!
+Details on each functionality level can be seen below after the prelab description!!
 
 
 #**Prelab**
