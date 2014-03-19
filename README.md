@@ -222,6 +222,65 @@ The corrected code can be seen below.  This takes away the opportunity for the c
 ```
 
 
+#Bad Code 2
+The same problem occured later in this came shell. A lack of a "when others" statement could create unexpect inputs and prevent latches.  
+
+```vhdl 
+
+	process (state_next, sseg_reg, sel_reg, sseg0, sseg1, sseg2, sseg3) is
+	begin
+		sseg_next <= sseg_reg;
+		sel_next <= sel_reg;
+		
+		case (state_next) is
+				when s0 =>
+					sseg_next <= sseg0;
+					sel_next <= "1110";
+				when s1 =>
+					sseg_next <= sseg1;
+					sel_next <= "1101";
+				when s2 =>
+					sseg_next <= sseg2;
+					sel_next <= "1011";
+				when s3 =>
+					sseg_next <= sseg3;
+					sel_next <= "0111";
+			end case;
+	end process;
+	
+```
+
+#Good Code 2
+The same problem as in bad code 1 was then fixed.  A 'when others' statement was simply just added to the end of the case statement to account for unexpect inputs and prevent latches.  
+
+```vhdl
+	process (state_next, sseg_reg, sel_reg, sseg0, sseg1, sseg2, sseg3) is
+	begin
+		sseg_next <= sseg_reg;
+		sel_next <= sel_reg;
+		
+		case (state_next) is
+				when s0 =>
+					sseg_next <= sseg0;
+					sel_next <= "1110";
+				when s1 =>
+					sseg_next <= sseg1;
+					sel_next <= "1101";
+				when s2 =>
+					sseg_next <= sseg2;
+					sel_next <= "1011";
+				when s3 =>
+					sseg_next <= sseg3;
+					sel_next <= "0111";
+				when others =>
+					sseg_next <= sseg0;
+					sel_next <= "1110";
+			end case;
+	end process;
+end behavioral;
+```
+
+
 #**Documentation Final**
 I used this website to figure out how to use the absolute value function in VHDL [ABS_Help](http://www.velocityreviews.com/forums/t376523-how-to-find-the-abs-of-std_logic_vector.html) 
 
