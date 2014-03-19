@@ -3,12 +3,11 @@
 -- Design      : Top shell for program creating two elevators.  
 -- Author      : C3C John Paul Terragnoli
 -- Company     : ECE281 Dream Team
--- File        : Two_Elevators.vhd
+-- File        : Two_Elevators2.vhd
 -- Generated   : Mon Mar 10 14:07:10 2014
 -- From        : interface description file
 -- Description : This file is a shell for implementing designs on a NEXYS 2 board
 ---------------------------------------------------------------------------------
-
 
 
 library IEEE;
@@ -249,37 +248,6 @@ begin
 	--what should be the else case?  
 	end if; 
 end Process;
-
-
------------------------------------------------------------------------------
---Logic for where the picked up person will go.    
------------------------------------------------------------------------------
---
---request_go_to_machine: process(ClockBus_sig(25),btn(3),switch(2 downto 0), currentFloorMoore1,
---CurrentFloorMoore2)
---begin
---	if RISING_EDGE(ClockBus_sig(25))  then
---		--if the first elevator is at the called floor
---		if(UNSIGNED(switch(2 downto 0))) = UNSIGNED(currentFloorMoore1) then
---			goToFloorIntermediate1 <=switch(5 downto 3); 
---			goToFloor1<=goToFloorIntermediate1;
-----			goToFloor2 <= goToFloor2; 
---		
---		--if the second elevator is at the called floor.  
---		elsif(UNSIGNED(switch(2 downto 0))) = UNSIGNED(currentFloorMoore2) THEN 
---			goToFloorIntermediate2 <= switch(5 downto 3);
---			goToFloor2<=goToFloorIntermediate2;
---			
-----			goToFloor1 <= goToFloor1; 
---		else 
-----			goToFloor2 <= goToFloor2; 
-----			goToFloor1 <= goToFloor1; 
---		end if; 	
---	else 
-----		goToFloor2 <= currentMooreFloor2; 
-----		goToFloor1 <= currentMooreFloor1;  
---	end if; 
---end Process;
 
 -----------------------------------------------------------------------------
 --Instantiate the design you with to implement below and start wiring it up!:
