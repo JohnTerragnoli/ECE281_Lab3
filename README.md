@@ -169,7 +169,8 @@ The following files were provided initially.
 [pinout_original] (https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/pinout_original.ucf) This module designates the inputs and the outputs of this program to specific locations on the Nexys2 board.  
 
 There was no bad code in the clock divider, the nexys2 top shell, or the nibble to sseg files.  
- 
+
+
 #Bad Code1
 
 This instance of bad code was found in the [nexys2_sseg_original](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/nexys2_sseg_original.vhd) in the process starting at line 64.  The problem with this code is that there is no "when others" case in the case statment, which leaves room for the computer to make assumptions, which is never a good thing. This can create unintentional latches which complicate designs once they get more intricate.  
