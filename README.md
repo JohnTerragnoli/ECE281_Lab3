@@ -173,7 +173,12 @@ There was no bad code in the clock divider, the nexys2 top shell, or the nibble 
 
 
 
-**Original Files for Moore and Mealy Machine from Computer Exercise 3: **
+**Original Files for Moore and Mealy Machine from Computer Exercise 3:**
+[Moore_Original_from_CE3](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MooreElevatorController_Shell_original.vhd)
+
+[Mealy_Original_from_CE3](https://raw.github.com/JohnTerragnoli/ECE281_Lab3/master/MealyElevatorController_Shell_original.vhd)
+
+Note: These files belong to someone else and were not edited at all, therefore the headers were not altered.  
 
 
 
